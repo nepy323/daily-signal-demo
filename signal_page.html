@@ -54,7 +54,7 @@ function chart(bars){
 function peLine(p){if(!p)return '本益比 <b>—</b>';if(p.value==null)return `本益比 <b>${p.status==='loss'?'虧損':'—'}</b>`;return `本益比 <b>${fmt(p.value)}</b> 倍（${esc(p.as_of.slice(5))}）`}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function marginLine(m){
- if(!m)return '融資 <b>無融資</b>';
+ if(!m)return '融資限額 <b>0</b>';
  const r=m.avg_2w?(m.balance/m.avg_2w-1)*100:0,cls=r>0?'up':r<0?'dn':'fl';
  return `融資餘額 <b>${num(m.balance)}</b> 張（${esc(m.as_of.slice(5))}）<br>前兩週平均 <b>${num(Math.round(m.avg_2w))}</b> 張　<b class="${cls}">${r>0?'+':''}${r.toFixed(1)}%</b>`}
 document.getElementById('hd').innerHTML=`今日訊號<small>${esc(D.date)} ${esc(D.cutoff_time)}　共 ${D.signals.length} 檔</small>`;
