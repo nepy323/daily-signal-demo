@@ -840,7 +840,11 @@
    "change_pct": 3.45,
    "limit_up": false,
    "volume": 5024,
-   "pe": null,
+   "pe": {
+    "as_of": "2026-10-19",
+    "value": null,
+    "status": "loss"
+   },
    "margin": {
     "as_of": "2026-10-19",
     "balance": 1112,
@@ -1664,7 +1668,11 @@
    "change_pct": 2.23,
    "limit_up": false,
    "volume": 10933,
-   "pe": null,
+   "pe": {
+    "as_of": "2026-10-19",
+    "value": null,
+    "status": "loss"
+   },
    "margin": null,
    "signal_time": "2026-10-20 13:00",
    "bars": [
@@ -2482,7 +2490,11 @@
    "change_pct": 9.71,
    "limit_up": true,
    "volume": 994,
-   "pe": null,
+   "pe": {
+    "as_of": "2026-10-19",
+    "value": null,
+    "status": "loss"
+   },
    "margin": {
     "as_of": "2026-10-19",
     "balance": 2751,
